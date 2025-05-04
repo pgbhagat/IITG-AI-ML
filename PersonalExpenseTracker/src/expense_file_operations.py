@@ -51,6 +51,6 @@ def track_budget(month, budget):
             if row[0].startswith(month):
                 total += float(row[1])
     if total > budget:
-        print('You have exceeded your budget!')
+        print(f'You have exceeded your budget by Rs. {total - budget} !')
     else:
         print(f'You have Rs. {budget - total} left for this month')
